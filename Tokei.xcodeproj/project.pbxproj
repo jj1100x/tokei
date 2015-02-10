@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB8D4C401A8A9B9000148606 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8D4C3F1A8A9B9000148606 /* AppDelegate.swift */; };
+		FB8D4C421A8A9B9000148606 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8D4C411A8A9B9000148606 /* ViewController.swift */; };
+		FB8D4C451A8A9B9000148606 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB8D4C431A8A9B9000148606 /* Main.storyboard */; };
+		FB8D4C471A8A9B9000148606 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB8D4C461A8A9B9000148606 /* Images.xcassets */; };
+		FB8D4C4A1A8A9B9000148606 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB8D4C481A8A9B9000148606 /* LaunchScreen.xib */; };
+		FB8D4C561A8A9B9000148606 /* TokeiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8D4C551A8A9B9000148606 /* TokeiTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FB8D4C501A8A9B9000148606 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB8D4C321A8A9B9000148606 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB8D4C391A8A9B9000148606;
+			remoteInfo = Tokei;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FB8D4C3A1A8A9B9000148606 /* Tokei.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tokei.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB8D4C3E1A8A9B9000148606 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB8D4C3F1A8A9B9000148606 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FB8D4C411A8A9B9000148606 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FB8D4C441A8A9B9000148606 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FB8D4C461A8A9B9000148606 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FB8D4C491A8A9B9000148606 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FB8D4C4F1A8A9B9000148606 /* TokeiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TokeiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB8D4C541A8A9B9000148606 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB8D4C551A8A9B9000148606 /* TokeiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokeiTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB8D4C371A8A9B9000148606 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB8D4C4C1A8A9B9000148606 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FB8D4C311A8A9B9000148606 = {
+			isa = PBXGroup;
+			children = (
+				FB8D4C3C1A8A9B9000148606 /* Tokei */,
+				FB8D4C521A8A9B9000148606 /* TokeiTests */,
+				FB8D4C3B1A8A9B9000148606 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FB8D4C3B1A8A9B9000148606 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB8D4C3A1A8A9B9000148606 /* Tokei.app */,
+				FB8D4C4F1A8A9B9000148606 /* TokeiTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB8D4C3C1A8A9B9000148606 /* Tokei */ = {
+			isa = PBXGroup;
+			children = (
+				FB8D4C3F1A8A9B9000148606 /* AppDelegate.swift */,
+				FB8D4C411A8A9B9000148606 /* ViewController.swift */,
+				FB8D4C431A8A9B9000148606 /* Main.storyboard */,
+				FB8D4C461A8A9B9000148606 /* Images.xcassets */,
+				FB8D4C481A8A9B9000148606 /* LaunchScreen.xib */,
+				FB8D4C3D1A8A9B9000148606 /* Supporting Files */,
+			);
+			path = Tokei;
+			sourceTree = "<group>";
+		};
+		FB8D4C3D1A8A9B9000148606 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FB8D4C3E1A8A9B9000148606 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FB8D4C521A8A9B9000148606 /* TokeiTests */ = {
+			isa = PBXGroup;
+			children = (
+				FB8D4C551A8A9B9000148606 /* TokeiTests.swift */,
+				FB8D4C531A8A9B9000148606 /* Supporting Files */,
+			);
+			path = TokeiTests;
+			sourceTree = "<group>";
+		};
+		FB8D4C531A8A9B9000148606 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FB8D4C541A8A9B9000148606 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB8D4C391A8A9B9000148606 /* Tokei */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB8D4C591A8A9B9000148606 /* Build configuration list for PBXNativeTarget "Tokei" */;
+			buildPhases = (
+				FB8D4C361A8A9B9000148606 /* Sources */,
+				FB8D4C371A8A9B9000148606 /* Frameworks */,
+				FB8D4C381A8A9B9000148606 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tokei;
+			productName = Tokei;
+			productReference = FB8D4C3A1A8A9B9000148606 /* Tokei.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FB8D4C4E1A8A9B9000148606 /* TokeiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB8D4C5C1A8A9B9000148606 /* Build configuration list for PBXNativeTarget "TokeiTests" */;
+			buildPhases = (
+				FB8D4C4B1A8A9B9000148606 /* Sources */,
+				FB8D4C4C1A8A9B9000148606 /* Frameworks */,
+				FB8D4C4D1A8A9B9000148606 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB8D4C511A8A9B9000148606 /* PBXTargetDependency */,
+			);
+			name = TokeiTests;
+			productName = TokeiTests;
+			productReference = FB8D4C4F1A8A9B9000148606 /* TokeiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB8D4C321A8A9B9000148606 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Jumpei Katayama";
+				TargetAttributes = {
+					FB8D4C391A8A9B9000148606 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					FB8D4C4E1A8A9B9000148606 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = FB8D4C391A8A9B9000148606;
+					};
+				};
+			};
+			buildConfigurationList = FB8D4C351A8A9B9000148606 /* Build configuration list for PBXProject "Tokei" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB8D4C311A8A9B9000148606;
+			productRefGroup = FB8D4C3B1A8A9B9000148606 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB8D4C391A8A9B9000148606 /* Tokei */,
+				FB8D4C4E1A8A9B9000148606 /* TokeiTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB8D4C381A8A9B9000148606 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB8D4C451A8A9B9000148606 /* Main.storyboard in Resources */,
+				FB8D4C4A1A8A9B9000148606 /* LaunchScreen.xib in Resources */,
+				FB8D4C471A8A9B9000148606 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB8D4C4D1A8A9B9000148606 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB8D4C361A8A9B9000148606 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB8D4C421A8A9B9000148606 /* ViewController.swift in Sources */,
+				FB8D4C401A8A9B9000148606 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB8D4C4B1A8A9B9000148606 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB8D4C561A8A9B9000148606 /* TokeiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FB8D4C511A8A9B9000148606 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB8D4C391A8A9B9000148606 /* Tokei */;
+			targetProxy = FB8D4C501A8A9B9000148606 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FB8D4C431A8A9B9000148606 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB8D4C441A8A9B9000148606 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FB8D4C481A8A9B9000148606 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB8D4C491A8A9B9000148606 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FB8D4C571A8A9B9000148606 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FB8D4C581A8A9B9000148606 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB8D4C5A1A8A9B9000148606 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Tokei/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FB8D4C5B1A8A9B9000148606 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Tokei/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FB8D4C5D1A8A9B9000148606 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TokeiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tokei.app/Tokei";
+			};
+			name = Debug;
+		};
+		FB8D4C5E1A8A9B9000148606 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TokeiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tokei.app/Tokei";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB8D4C351A8A9B9000148606 /* Build configuration list for PBXProject "Tokei" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB8D4C571A8A9B9000148606 /* Debug */,
+				FB8D4C581A8A9B9000148606 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB8D4C591A8A9B9000148606 /* Build configuration list for PBXNativeTarget "Tokei" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB8D4C5A1A8A9B9000148606 /* Debug */,
+				FB8D4C5B1A8A9B9000148606 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FB8D4C5C1A8A9B9000148606 /* Build configuration list for PBXNativeTarget "TokeiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB8D4C5D1A8A9B9000148606 /* Debug */,
+				FB8D4C5E1A8A9B9000148606 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FB8D4C321A8A9B9000148606 /* Project object */;
+}
