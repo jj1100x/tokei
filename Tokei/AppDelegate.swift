@@ -12,10 +12,13 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    @IBOutlet var vc:ViewController?
+    
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+//        vc = ViewController(nibName: nil, bundle: nil)
+//        self.window?.rootViewController = vc
+//        self.window?.makeKeyAndVisible()
         return true
     }
 
