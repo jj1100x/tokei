@@ -23,15 +23,15 @@ import UIKit
         return bounds.width * 0.06
     }
 
-    var secHandHeight: CGFloat {
+    private var secHandHeight: CGFloat {
         return bounds.width * CGFloat(mutiplierSecHandLength)
     }
     
-    var hoursHandHeight: CGFloat {
+    private var hoursHandHeight: CGFloat {
         return bounds.width * CGFloat(mutiplierHourHandLength)
     }
     
-    var minHandHeight: CGFloat {
+    private var minHandHeight: CGFloat {
         return bounds.width * CGFloat(mutiplierMinHandLength)
     }
 
@@ -42,8 +42,6 @@ import UIKit
     var clockFace: CAShapeLayer!
     var centerPointCircle: CAShapeLayer!
     var timeBoard: CALayer!
-//    var timer: NSTimer = NSTimer()
-//    var timeInterval: NSTimeInterval = 0.001
     
     var clockCenter: CGPoint {
         return self.center

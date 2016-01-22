@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var clockViewWidthConstraint: NSLayoutConstraint!
     @IBOutlet weak var clockViewHeightConstraint: NSLayoutConstraint!
     
-    var timeInterval: NSTimeInterval = 0.001
+    let timeInterval: NSTimeInterval = 0.001
     var timer: NSTimer!
 
     override func viewDidLoad() {
@@ -46,16 +46,11 @@ class ViewController: UIViewController {
         let seconds: NSInteger = dateComponents.second
         let minutes: NSInteger = dateComponents.minute
         let hours: NSInteger = dateComponents.hour
-        
-//        let digitalWatchFormatter = NSDateFormatter()
-//        digitalWatchFormatter.dateFormat = "H:mm:ss"
-//        let dateString = digitalWatchFormatter.stringFromDate()
 
+        /// Update digital watch
         digitalWatchLabel.text = String(format: "%02d:%02d:%02d", hours, minutes, seconds)
         
-//        print(milliSec)
         let s = Double(seconds) * 100 + milliSeconds// use as milllisec
-        print(s)
         let m = Double(minutes) * 60 + Double(seconds)// use as sec
         let h = Double(hours) * 60 + Double(minutes)// use as min
 
@@ -66,17 +61,14 @@ class ViewController: UIViewController {
         //
     }
     
-    override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
-        super.viewWillTransitionToSize(size, withTransitionCoordinator: coordinator)
-        coordinator.animateAlongsideTransition(nil, completion: { (ctxt) -> Void in
-//            print(ctxt.percentComplete)
-//            print(ctxt.completionVelocity)
-//            print(ctxt.completionCurve)
-//            self.clockView.layoutIfNeeded()
-        })
-    }
-        
-    //  MARK: - Private methods
+    // rotation API 
+    // Use this for autolayout progmatically
+//    override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
+//        super.viewWillTransitionToSize(size, withTransitionCoordinator: coordinator)
+//        coordinator.animateAlongsideTransition(nil, completion: { (ctxt) -> Void in
+//        })
+//    }
+    
 
     
 }

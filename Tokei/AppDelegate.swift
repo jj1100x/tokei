@@ -16,9 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-//        vc = ViewController(nibName: nil, bundle: nil)
-//        self.window?.rootViewController = vc
-//        self.window?.makeKeyAndVisible()
         return true
     }
 
