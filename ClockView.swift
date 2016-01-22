@@ -7,27 +7,33 @@
 //
 
 import UIKit
-//import 
-//pragma mark - Private Methods
-//Default sizes of hands:
-//in percentage (0.0 - 1.0)
-//let hoursHandLength: CGFloat = 0.65
-let minHandLength: CGFloat = 0.75
-let secHandsLength: CGFloat = 0.8
-//in pixels
-let minHandWidth: CGFloat = 8
-let secHandWidth: CGFloat = 4
+
+
 
 @IBDesignable class ClockView: UIView {
+    private let mutiplierMinHandLength = 0.4//mutiplier to bounds.height
+    private let mutiplierSecHandLength = 0.3
+    private let mutiplierHourHandLength = 0.2
     
     @IBInspectable var clockViewBorderWidth: CGFloat = 2.0
     @IBInspectable var hoursHandWidth: CGFloat = 8
-    @IBInspectable var hoursHandHeight: CGFloat = 50
     @IBInspectable var minHandWidth: CGFloat = 6
-    @IBInspectable var minHandHeight: CGFloat = 100
     @IBInspectable var secHandWidth: CGFloat = 4
-    @IBInspectable var secHandHeight: CGFloat = 110
-    @IBInspectable var centerCircleRadius: CGFloat = 20
+    var centerCircleRadius: CGFloat {
+        return bounds.width * 0.06
+    }
+
+    var secHandHeight: CGFloat {
+        return bounds.width * CGFloat(mutiplierSecHandLength)
+    }
+    
+    var hoursHandHeight: CGFloat {
+        return bounds.width * CGFloat(mutiplierHourHandLength)
+    }
+    
+    var minHandHeight: CGFloat {
+        return bounds.width * CGFloat(mutiplierMinHandLength)
+    }
 
     var containerLayer: CALayer!
     var hourHand: CAShapeLayer!
@@ -36,8 +42,8 @@ let secHandWidth: CGFloat = 4
     var clockFace: CAShapeLayer!
     var centerPointCircle: CAShapeLayer!
     var timeBoard: CALayer!
-    var timer: NSTimer = NSTimer()
-    var timeInterval: NSTimeInterval = 0.001
+//    var timer: NSTimer = NSTimer()
+//    var timeInterval: NSTimeInterval = 0.001
     
     var clockCenter: CGPoint {
         return self.center
@@ -49,19 +55,19 @@ let secHandWidth: CGFloat = 4
     
     
     override func drawRect(rect: CGRect) {
-
         setupCenterCircle()
         setupHourHand()
         setupMinHand()
         setupSecHand()
-        updateCurrentTime()
         clockFaceSetup()
-
+        print("after drawRect \(bounds)")
     }
+    
     
     func clockFaceSetup() {
         layer.cornerRadius = bounds.width/2
         layer.borderColor = UIColor.blackColor().CGColor
+        layer.backgroundColor = UIColor.orangeColor().CGColor// Doesn't work!
         layer.borderWidth = 2.0
         
 //        let label = CATextLayer()
@@ -73,10 +79,11 @@ let secHandWidth: CGFloat = 4
         
     }
     
-    func updateCurrentTime() {
-        
-    }
-    
+//    override func layoutSubviews() {
+//    
+////     You shouldn't called this method directory
+//    }
+
     func setupHourHand() {
         hourHand = CAShapeLayer()
         hourHand.path = UIBezierPath(rect: CGRectMake(-(hoursHandWidth/2), -hoursHandHeight, hoursHandWidth, hoursHandHeight)).CGPath
@@ -105,6 +112,17 @@ let secHandWidth: CGFloat = 4
         
     }
     
+//    override func layoutIfNeeded() {
+          /// Implement this method causes @IBDesignable related error
+//        print("after layoutIfNeeded \(bounds)")
+//        layer.cornerRadius = bounds.width/2
+//        centerPointCircle.position = CGPointMake(bounds.width/2, bounds.height/2)
+//        secHand.position = CGPointMake(bounds.width/2, bounds.height/2)
+//        minHand.position = CGPointMake(bounds.width/2, bounds.height/2)
+//        hourHand.position = CGPointMake(bounds.width/2, bounds.height/2)
+//
+//    }
+    
     func setupCenterCircle() {
         centerPointCircle = CAShapeLayer()
         centerPointCircle.path = UIBezierPath(roundedRect: CGRectMake(-(centerCircleRadius/2), -(centerCircleRadius/2), centerCircleRadius, centerCircleRadius), cornerRadius: centerCircleRadius/2).CGPath
@@ -126,66 +144,6 @@ let secHandWidth: CGFloat = 4
         // set content color, for now it will be white
         containerLayer.backgroundColor = UIColor.whiteColor().CGColor
 
-    }
-    
-    private func positionCenter() {
-        hourHand.position = CGPointMake(bounds.width/2, bounds.height/2)
-        print("\(center) == \(hourHand.position)")
-        print(hourHand.position)
-        minHand.position = CGPointMake(bounds.width/2, bounds.height/2)
-        secHand.position = CGPointMake(bounds.width/2, bounds.height/2)
-    }
-    
-    func start() {
-        timer = NSTimer.scheduledTimerWithTimeInterval(timeInterval, target: self, selector: "updateClock", userInfo: nil, repeats: true)
-        
-    }
-    
-    func stop() {
-        timer.invalidate()
-    }
-    
-    /// Called every miiilisecond
-    func updateClock() {
-        /// Update clock UI
-
-        print(NSDate())
-        let dateComponents: NSDateComponents = NSCalendar.currentCalendar().components([NSCalendarUnit.Hour, NSCalendarUnit.Minute, NSCalendarUnit.Second, NSCalendarUnit.Nanosecond], fromDate: NSDate())
-//        let nanoSeconds = dateComponents.nanosecond
-        print(dateComponents.timeZone)
-        print(dateComponents.hour)
-        let milliSeconds = round(Double(dateComponents.nanosecond/10000000))
-        let seconds: NSInteger = dateComponents.second
-        let minutes: NSInteger = dateComponents.minute
-        var hours: NSInteger = dateComponents.hour
-//        print(dateComponents.date!)
-        //NSLog(@"raw: hours:%d min:%d secs:%d", hours, minutes, seconds);
-        if (hours > 12) {
-            hours -= 12
-        } //PM
-
-        let s = Double(seconds) + milliSeconds / 100
-        print(s)
-        let m = Double(minutes) * 60 + Double(seconds)
-        let h = Double(hours) * 60 + Double(minutes)
-        print(hours)
-//        round(nanoseconds/1000000)
-        //set degree per time
-        let secAngle: Double = Degrees2Radians(Double(s)/60.0*360);
-        let minAngle: Double = Degrees2Radians(Double(m)/60*60*360);
-        let hourAngle: Double = Degrees2Radians(Double(h)/12.0*60.0*360);
-        print(secAngle)
-        print(minAngle)
-        //reflect the rotations + 180 degres since CALayers coordinate system is inverted
-        secHand.transform = CATransform3DMakeRotation (CGFloat(secAngle), 0, 0, 1);
-        minHand.transform = CATransform3DMakeRotation (CGFloat(m*0.1*M_PI/180), 0, 0, 1);
-        hourHand.transform = CATransform3DMakeRotation (CGFloat(h*0.5*M_PI/180), 0, 0, 1);
-        print("updated!")
-    }
-    
-    //  MARK: - Private methods
-    private func Degrees2Radians(degrees: Double) -> Double {
-        return degrees * M_PI / 180;
     }
 
 }

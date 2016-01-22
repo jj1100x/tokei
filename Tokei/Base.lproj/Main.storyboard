@@ -20,27 +20,56 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Apa-X8-tcA" customClass="ClockView" customModule="Tokei" customModuleProvider="target">
-                                <rect key="frame" x="60" y="60" width="480" height="480"/>
+                                <rect key="frame" x="90" y="40" width="420" height="420"/>
                                 <color key="backgroundColor" red="0.99990516901016235" green="1" blue="0.99987047910690308" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" secondItem="Apa-X8-tcA" secondAttribute="height" multiplier="1:1" id="2ey-ij-Dh0"/>
+                                    <constraint firstAttribute="height" constant="420" id="afl-Pq-dkL"/>
                                     <constraint firstAttribute="width" secondItem="Apa-X8-tcA" secondAttribute="height" multiplier="1:1" id="xWs-DT-85D"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="afl-Pq-dkL"/>
+                                        <exclude reference="xWs-DT-85D"/>
+                                    </mask>
+                                </variation>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x4L-Bv-fRa">
+                                <rect key="frame" x="60" y="492" width="480" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="AnA-KZ-K1J"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="x4L-Bv-fRa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6pg-X4-jtW"/>
                             <constraint firstItem="Apa-X8-tcA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VgO-Rc-22P"/>
-                            <constraint firstItem="Apa-X8-tcA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fyM-Xt-eB4"/>
-                            <constraint firstItem="Apa-X8-tcA" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="k7B-4A-NZE"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="x4L-Bv-fRa" secondAttribute="bottom" constant="40" id="Whg-1J-y8K"/>
+                            <constraint firstItem="Apa-X8-tcA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-50" id="fyM-Xt-eB4"/>
+                            <constraint firstItem="Apa-X8-tcA" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="ooU-sc-tOr"/>
+                            <constraint firstItem="Apa-X8-tcA" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.7" id="pLn-3V-xIe"/>
+                            <constraint firstItem="x4L-Bv-fRa" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="xBB-BM-vtp"/>
                         </constraints>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="pLn-3V-xIe"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="clockView" destination="Apa-X8-tcA" id="6GM-hR-8HU"/>
+                        <outlet property="clockViewHeightConstraint" destination="pLn-3V-xIe" id="P3W-wd-NQ3"/>
+                        <outlet property="clockViewWidthConstraint" destination="ooU-sc-tOr" id="1OW-t4-I8T"/>
+                        <outlet property="digitalWatchLabel" destination="x4L-Bv-fRa" id="GU0-I3-jTn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-63" y="-78"/>
+            <point key="canvasLocation" x="-85.5" y="-234.75"/>
         </scene>
     </scenes>
 </document>
