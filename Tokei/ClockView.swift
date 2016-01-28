@@ -68,6 +68,7 @@ import UIKit
         layer.backgroundColor = UIColor.orangeColor().CGColor// Doesn't work!
         layer.borderWidth = 2.0
         
+        //  TODO: - Create Clock face view
 //        let label = CATextLayer()
 //        label.font = UIFont(name: "Helvetica", size: 10)
 //        label.frame = CGRectMake(0, 0, 50, 50)

@@ -37,7 +37,7 @@
 		FB8D4C4F1A8A9B9000148606 /* TokeiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TokeiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB8D4C541A8A9B9000148606 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB8D4C551A8A9B9000148606 /* TokeiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokeiTests.swift; sourceTree = "<group>"; };
-		FB8D4C811A8A9C7C00148606 /* ClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClockView.swift; path = ../ClockView.swift; sourceTree = "<group>"; };
+		FB8D4C811A8A9C7C00148606 /* ClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */

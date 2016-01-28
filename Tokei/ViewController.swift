@@ -58,18 +58,6 @@ class ViewController: UIViewController {
         clockView.secHand.transform = CATransform3DMakeRotation (CGFloat(s*0.06*M_PI/180), 0, 0, 1);
         clockView.minHand.transform = CATransform3DMakeRotation (CGFloat(m*0.1*M_PI/180), 0, 0, 1);
         clockView.hourHand.transform = CATransform3DMakeRotation (CGFloat(h*0.5*M_PI/180), 0, 0, 1);
-        //
     }
-    
-    // rotation API 
-    // Use this for autolayout progmatically
-//    override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
-//        super.viewWillTransitionToSize(size, withTransitionCoordinator: coordinator)
-//        coordinator.animateAlongsideTransition(nil, completion: { (ctxt) -> Void in
-//        })
-//    }
-    
-
-    
 }
 
