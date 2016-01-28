@@ -1,5 +1,5 @@
 # Tokei
-Simple clock app with CALayer and adaptive layout. It has differenct styles based on device orientation.
+Simple clock app with CALayer and adaptive layout. It has different styles based on device orientation.
 
 ## Knowledge
 - Create adaptive design using sizeClass on storyboard.
